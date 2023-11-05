@@ -9,7 +9,7 @@ import Foundation
 
 final class HomeViewModel {
     public var numberOfItems: Int {
-        1
+        2
     }
     
     public func sizeForItem(indexPath: IndexPath,frame: CGRect) -> CGSize {
@@ -34,4 +34,16 @@ final class HomeViewModel {
     public var getListStory: [Stories] {
         return story
     }
+    
+    private var posts = [
+        Post(profileImage: "img2", username: "jack", postImage: "post1"),
+        Post(profileImage: "img4", username: "samuel", postImage: "post2"),
+        Post(profileImage: "img3", username: "carolina", postImage: "post3"),
+        Post(profileImage: "img6", username: "puggy_101", postImage: "post4")
+    ]
+    
+    public var getListPosts: [Post] {
+        posts
+    }
+    
 }

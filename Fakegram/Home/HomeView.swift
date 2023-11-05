@@ -16,7 +16,7 @@ class HomeView: UIView {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.register(StoryCardCollectionViewCell.self, forCellWithReuseIdentifier: StoryCardCollectionViewCell
             .identifier)
-        
+        collectionView.register(PostCardCollectionViewCell.self, forCellWithReuseIdentifier: PostCardCollectionViewCell.identifier)
         collectionView.backgroundColor = .clear
         return collectionView
     }()

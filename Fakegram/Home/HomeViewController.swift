@@ -43,11 +43,11 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
             
         } else {
-            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StoryCardCollectionViewCell.identifier, for: indexPath) as? StoryCardCollectionViewCell
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PostCardCollectionViewCell.identifier, for: indexPath) as? PostCardCollectionViewCell
             else {
                 fatalError("deu pau no StoryCardCollectionViewCell")
                 }
-            cell.setupCell(listStory: viewModel.getListStory)
+            cell.setupCell(listPosts: viewModel.getListPosts)
             return cell
         }
 
